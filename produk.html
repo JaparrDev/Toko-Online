@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hadi Store | Produk</title>
+    <link rel="icon" type="img/LogoWEB/favicon.png" href="img/LogoWEB/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="produk">
+    <main class="wrap sec">
+      <h1>Semua produk</h1>
+      <div class="tools">
+        <input
+          id="q"
+          type="search"
+          placeholder="Cari sepatu"
+          aria-label="Cari produk"
+        />
+        <select id="kat" aria-label="Kategori">
+          <option value="">Semua kategori</option>
+          <option value="trail">Trail Run</option>
+          <option value="road">Road Running</option>
+          <option value="hiking">Hiking</option>
+        </select>
+        <select id="urut" aria-label="Urutkan">
+          <option value="">Urutan awal</option>
+          <option value="murah">Harga termurah</option>
+          <option value="mahal">Harga termahal</option>
+        </select>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p id="kosong" class="mut" hidden>
+        Produk tidak ditemukan. Coba cari kata kunci lain.
+      </p>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
